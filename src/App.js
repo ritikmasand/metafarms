@@ -38,14 +38,14 @@ const App = () => {
         setSelectedService,
       }}
     >
-      <div>
+      <div className="mainpage">
         <Routes>
           {/* <Main/> */}
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Aboutus />} />
           <Route path="/about" element={<About />} />
           {/* <Route path="/aboutpage" element={<Aboutus />} /> */}
           <Route path="/login" element={<LoginModal />} />
-          <Route path="/Aboutus" element={<Aboutus />} />
+          <Route path="/Aboutus" element={<Home />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Contact3" element={<ContactUs />} />
           {/* <Route path="/Services" element={<Services/>} /> */}
