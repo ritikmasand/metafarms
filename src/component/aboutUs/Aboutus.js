@@ -6,12 +6,12 @@ import { Container } from "react-bootstrap";
 import NavBar from "../Shared/Navbar/Navbar";
 import Fade from "react-reveal/Fade";
 import Footer from "../Home/Footer/Footer";
+import Hero from "../Home/Hero/Hero";
 
 const Aboutus = () => {
   return (
     <>
       <NavBar />
-
       <Container className="pt-4">
         <Fade duration={3000} left>
           <h1 className="headerTitle text-center container headerHighlight">
@@ -23,7 +23,7 @@ const Aboutus = () => {
         </Fade>
 
         <Fade duration={3000} left>
-          <p className="headerContent img-fluid container">
+          <p className="headerContent img-fluid container change">
             Plants grown in soil need more space for its roots to spread out as
             the roots reach out as far as possible into the soil to capture as
             much water and nutrients as possible. Soil holds water and nutrients
@@ -39,6 +39,7 @@ const Aboutus = () => {
           </p>
         </Fade>
       </Container>
+      <Hero />
       <Footer />
     </>
   );

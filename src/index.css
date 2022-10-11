@@ -14,7 +14,7 @@ code {
     monospace;
 }
 .mainpage {
-  background-color: rgb(46, 208, 92);
+  background-color: rgb(137, 180, 149);
   padding: 1px;
 }
 .black {
@@ -28,5 +28,12 @@ code {
   width: 90%;
   display: flex;
   margin-left: 69px;
-  border-radius: 30%;
+  /* border-radius: 30%; */
+}
+.change {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.change:hover {
+  color: #e0ddd7;
+  transform: scale(1.2);
 }

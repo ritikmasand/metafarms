@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
- import birla from "../../../Assets/birla.png";
- import infosys from "../../../Assets/infosys.png";
- import bosch from "../../../Assets/bosch.png";
- import nelito from "../../../Assets/nelito.png";
- import Fade from 'react-reveal/Fade';
+import birla from "../../../Assets/birla.png";
+import infosys from "../../../Assets/infosys.png";
+import bosch from "../../../Assets/bosch.png";
+import nelito from "../../../Assets/nelito.png";
+import Fade from "react-reveal/Fade";
 // import devfolio from "../../../assets/img/Devfolio.png";
 // import matic from "../../../assets/img/Matic.png";
 // import fold from "../../../assets/img/fold.png";
@@ -40,83 +40,84 @@ import NavBar from "../../Shared/Navbar/Navbar";
 const Sponsors = () => {
   return (
     <>
-    <NavBar/>
-    <div
-      className=" section-sponsors pt-5"
-      id="sponsors-section"
-      style={{ background: "#ffffff" }}
-    >
-      <Container className=" pt-5">
-        <p className={["section-bounties-header h1 ", Styles.title].join(" ")}>
-        
-        <h1 className="headerTitle text-center">Partners and<span className="headerHighlight">  customers</span></h1>
-        
-          {/* Partners and customers */}
-        </p>
-        <div className={Styles.under}></div>
-
-        <div className="text-center">
-        
-          <div style={{ textAlign: "center", marginBottom: "5px" }}>
-            <h2 style={{ borderBottom: "1px solid black", display: "inline" }}>
-              {/* Title Partners */}
-            </h2>
-            <br></br>
-            <br></br>
-          </div>
-         
-          <Row>
-            <Col
-              data-aos="fade-up"
-              lg={true}
-              className={["p-3 mb-5 text-center", Styles.sponsors].join(" ")}
-            >
-              <a
-                // href="https://www.github.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={birla}
-                  alt="birla-logo"
-                  className={[Styles.mainSponsors, Styles.birla].join(" ")}
-                />
-              </a>
-            </Col>
-            <Col
-              data-aos="fade-up"
-              lg={true}
-              className={["p-3 mb-5 text-center", Styles.sponsors].join(" ")}
-            >
-              <a
-                // href="https://devfolio.co/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={infosys}
-                  alt="infosys-logo"
-                  className={[Styles.mainSponsors, Styles.infosys].join(" ")}
-                />
-              </a>
-            </Col>
-          </Row>
-
-
-
-
-          <div
-            style={{
-              textAlign: "center",
-              marginTop: "45px",
-              marginBottom: "5px"
-            }}
+      <NavBar />
+      <div
+        className=" section-sponsors pt-5"
+        id="sponsors-section"
+        style={{ background: "#ffffff" }}
+      >
+        <Container className=" pt-5">
+          <p
+            className={["section-bounties-header h1 ", Styles.title].join(" ")}
           >
-            <h2 style={{ borderBottom: "1px solid black", display: "inline" }}>
-             
-            </h2>
-          </div>
-          {/* <div
+            <h1 className="headerTitle text-center">
+              Partners and<span className="headerHighlight"> customers</span>
+            </h1>
+
+            {/* Partners and customers */}
+          </p>
+          <div className={Styles.under}></div>
+
+          <div className="text-center">
+            <div style={{ textAlign: "center", marginBottom: "5px" }}>
+              <h2
+                style={{ borderBottom: "1px solid black", display: "inline" }}
+              >
+                {/* Title Partners */}
+              </h2>
+              <br></br>
+              <br></br>
+            </div>
+
+            <Row>
+              <Col
+                data-aos="fade-up"
+                lg={true}
+                className={["p-3 mb-5 text-center", Styles.sponsors].join(" ")}
+              >
+                <a
+                  // href="https://www.github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={birla}
+                    alt="birla-logo"
+                    className={[Styles.mainSponsors, Styles.birla].join(" ")}
+                  />
+                </a>
+              </Col>
+              <Col
+                data-aos="fade-up"
+                lg={true}
+                className={["p-3 mb-5 text-center", Styles.sponsors].join(" ")}
+              >
+                <a
+                  // href="https://devfolio.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={infosys}
+                    alt="infosys-logo"
+                    className={[Styles.mainSponsors, Styles.infosys].join(" ")}
+                  />
+                </a>
+              </Col>
+            </Row>
+
+            <div
+              style={{
+                textAlign: "center",
+                marginTop: "45px",
+                marginBottom: "5px",
+              }}
+            >
+              <h2
+                style={{ borderBottom: "1px solid black", display: "inline" }}
+              ></h2>
+            </div>
+            {/* <div
             style={{
               textAlign: "center",
               marginTop: "45px",
@@ -144,38 +145,38 @@ const Sponsors = () => {
               Associate Partners
             </h3>
           </div>  */}
-          <Row>
-            <Col
-              md={true}
-              className={["mt-4 text-center", Styles.sponsors].join(" ")}
-              data-aos="fade-up"
-            >
-              <a
-                // href="https://www.hackclub.com/"
-                target="_blank"
-                rel="noopener noreferrer"
+            <Row>
+              <Col
+                md={true}
+                className={["mt-4 text-center", Styles.sponsors].join(" ")}
+                data-aos="fade-up"
               >
-                <img
-                  src={nelito}
-                  alt="nelito-logo"
-                  className={[Styles.mainSponsors, Styles.nelito].join(" ")}
-                />
-              </a>
-            </Col>
-            <Col
-              data-aos="fade-up"
-              className={["mt-5 text-center", Styles.sponsors].join(" ")}
-              md={true}
-            >
-              <a
-              //  href="https://matic.network/"
-                target="_blank"
-                rel="noopener noreferrer"
+                <a
+                  // href="https://www.hackclub.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={nelito}
+                    alt="nelito-logo"
+                    className={[Styles.mainSponsors, Styles.nelito].join(" ")}
+                  />
+                </a>
+              </Col>
+              <Col
+                data-aos="fade-up"
+                className={["mt-5 text-center", Styles.sponsors].join(" ")}
+                md={true}
               >
-                <img src={bosch} alt="bosch-logo" className={Styles.bosch} />
-              </a>
-            </Col>
-            {/* <Col
+                <a
+                  //  href="https://matic.network/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={bosch} alt="bosch-logo" className={Styles.bosch} />
+                </a>
+              </Col>
+              {/* <Col
               data-aos="fade-up"
               md={true}
               className={["mt-5 text-center", Styles.sponsors].join(" ")}
@@ -188,8 +189,8 @@ const Sponsors = () => {
                 <img src={bosch} alt="bosch-logo" className={bosch.fold} />
               </a>
             </Col> */}
-          </Row>
-          {/* <Row>
+            </Row>
+            {/* <Row>
             <Col
               data-aos="fade-up"
               md={true}
@@ -584,9 +585,9 @@ const Sponsors = () => {
               </a>
             </Col> 
           </Row> */}
-        </div>
-      </Container>
-    </div>
+          </div>
+        </Container>
+      </div>
     </>
   );
 };

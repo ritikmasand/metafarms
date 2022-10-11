@@ -19,6 +19,8 @@ import Traininganddevelopment from "./component/Home/Services/trainiganddevelopm
 import Newservice from "./component/newservice";
 import Newcontact from "./component/newcontact";
 import ContactUs from "./component/contact3/ContactUs";
+import Login from "./component/Shared/Navbar/Login";
+import BasicExample from "./component/Farmtable";
 // import Main from './component/views/Form/Main/Main';
 
 export const UserContext = createContext();
@@ -44,11 +46,15 @@ const App = () => {
           <Route path="/" element={<Aboutus />} />
           <Route path="/about" element={<About />} />
           {/* <Route path="/aboutpage" element={<Aboutus />} /> */}
-          <Route path="/login" element={<LoginModal />} />
+          <Route path="/Supplierlogin" element={<LoginModal />} />
+          <Route path="/GrowerLogin" element={<LoginModal />} />
           <Route path="/Aboutus" element={<Home />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Contact3" element={<ContactUs />} />
+          <Route path="/farmtable" element={<BasicExample />} />
           {/* <Route path="/Services" element={<Services/>} /> */}
+
+          {/* <Login /> */}
           <Route
             path="/Newservice/farming-consultancy"
             element={<Viewmore />}
@@ -64,6 +70,8 @@ const App = () => {
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/Newservice" element={<Newservice />} />
           <Route path="/Newcontact" element={<Newcontact />} />
+          {/* <Route path="/Buyerlogin" element={<Buyerlogin />} /> */}
+          {/* <Route path="/Login" element={<Login />} /> */}
 
           <Route
             path="/dashboard/*"

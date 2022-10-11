@@ -15,7 +15,7 @@ const Home = () => {
     <main className="mainpage">
       <Header />
       {/* <BuildTools/> */}
-      {/* <About /> */}
+      <About />
       <Services />
       {/* <BrowserSupport/> */}
       {/* <HappyClient/> */}

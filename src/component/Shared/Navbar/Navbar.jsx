@@ -41,12 +41,12 @@ const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto mainNav" activeKey="/home">
             <Nav.Item>
-              <Nav.Link href="/Aboutus" className="nav-link">
+              {/* <Nav.Link href="/Aboutus" className="nav-link">
                 About us
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link
+              {/* <Nav.Link
                 as={Link}
                 to="/"
                 className="nav-link"
@@ -55,21 +55,26 @@ const NavBar = () => {
                 }
               >
                 Home
+              </Nav.Link> */}
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="/Supplierlogin" className="nav-link">
+                Buyer Login
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Newservice" className="nav-link">
-                Services
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="/sponsors" className="nav-link">
-                Partners and customers
+              <Nav.Link href="/Growerlogin" className="nav-link">
+                Growers login
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="/newcontact" className="nav-link">
-                Contact Us
+                Buyer's Details
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="/farmtable" className="nav-link">
+                Farm Details
               </Nav.Link>
             </Nav.Item>
             {/* <Nav.Item>

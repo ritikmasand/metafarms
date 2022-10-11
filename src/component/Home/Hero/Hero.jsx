@@ -8,6 +8,7 @@ import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Typed from "react-typed";
 import ControlledCarousel from "../../aboutUs/ControlledCarousel";
+import farms from "../../../Assets/farms.jpeg";
 
 const Hero = () => {
   const theme = useTheme();
@@ -18,11 +19,7 @@ const Hero = () => {
   return (
     <>
       {/* <ControlledCarousel /> */}
-      <img
-        className="aboutimage"
-        src="https://element502.com/wp-content/uploads/2017/01/about-post.jpg"
-        alt=""
-      />
+      <img className="aboutimage" src={farms} alt="" />
       <Grid container spacing={4} className="mainpage">
         <Grid item container xs={2} md={20} alignItems={"center"}>
           <Box
